@@ -1,0 +1,28 @@
+# this is an example of a configuration
+# copy this file to env.yml
+
+# The AWS region
+region: us-east-1
+
+# The serverless stage. Usually 'dev' or 'production'
+stage: dev
+
+# The DynamoDB on-demand backup name. The same name is used for all the
+# tables backed up by this scheduler
+backupName: ScheduledBackup
+
+# The backupSchedule. The format is the same as a CloudWatch event schedule entry.
+# See https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
+# Examples:
+#  backupSchedule: cron(0 12 * * ? *)
+#  backupSchedule: rate(1 day)
+backupSchedule: rate(1 day)
+
+# the list of table names to backup
+tableNames:
+  - table1
+  - table2
+
+# The retention, in days. Backups older than this age will be
+# deleted, on each of the tables listed in tableNames.
+retention: 2
