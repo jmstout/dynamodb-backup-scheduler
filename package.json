@@ -17,6 +17,7 @@
     "lint"
   ],
   "devDependencies": {
+    "@types/bluebird": "^3.5.19",
     "@types/node": "^8.0.47",
     "pre-commit": "^1.2.2",
     "serverless-webpack": "^3.0.0",
@@ -28,6 +29,7 @@
   },
   "dependencies": {
     "aws-sdk": "^2.141.0",
+    "bluebird": "^3.5.1",
     "googleapis": "^22.2.0",
     "qs": "^6.5.1"
   }
