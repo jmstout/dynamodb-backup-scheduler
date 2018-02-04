@@ -32,6 +32,16 @@ or prefixing every serverless command with
 AWS_PROFILE=newAccount serverless ...
 ```
 
+## IAM Permissions
+The IAM identity used to deploy requires several permissions. Start by creating
+an IAM policy based on the content of
+[this file](https://github.com/unitoio/dynamodb-backup-scheduler/blob/master/aws-policy.json).
+You will need to replace <region> with the name of the AWS region and <account>
+with your actual AWS account number.
+
+Once you have added that policy, attach it to your user account (or to a group
+your user is part of).
+
 ## Initial Deployment
 ```sh
 serverless deploy -v
