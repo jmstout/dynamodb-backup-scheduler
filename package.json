@@ -20,6 +20,7 @@
     "@types/bluebird": "^3.5.19",
     "@types/node": "^8.0.47",
     "pre-commit": "^1.2.2",
+    "serverless-plugin-aws-alerts": "^1.2.4",
     "serverless-webpack": "^3.0.0",
     "ts-loader": "^2.3.7",
     "tslint": "^4.5.1",
