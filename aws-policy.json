@@ -103,6 +103,19 @@
         "events:Describe*"
       ],
       "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "sns:CreateTopic",
+        "sns:DeleteTopic*",
+        "sns:GetTopicAttributes",
+        "sns:SetTopicAttributes",
+        "sns:List*",
+        "sns:Subscribe",
+        "sns:Unsubscribe"
+      ],
+      "Resource": "*"
     }
   ]
 }

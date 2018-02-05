@@ -26,3 +26,11 @@ tableNames:
 # The retention, in days. Backups older than this age will be
 # deleted, on each of the tables listed in tableNames.
 retention: 2
+
+# SNS notifications where to send the alerts to, on the 'production' stage only
+# See
+# - https://github.com/ACloudGuru/serverless-plugin-aws-alerts
+# - https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html
+notifications:
+  - protocol: email
+    endpoint: name@example.com
